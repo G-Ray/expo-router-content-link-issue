@@ -22,7 +22,23 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "intentFilters": [
+        {
+          "action": "VIEW",
+          "data": [
+            {
+              "scheme": "content",
+              "mimeType": "text/plain"
+            }
+          ],
+          "category": [
+            "BROWSABLE",
+            "DEFAULT"
+          ]
+        }
+      ],
+      "package": "com.gray.exporoutercontentlinkissue"
     },
     "web": {
       "bundler": "metro",
@@ -35,6 +51,14 @@
     "experiments": {
       "tsconfigPaths": true,
       "typedRoutes": true
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "29fa0a43-93bc-4d72-8651-cdd4d7c0ef37"
+      }
     }
   }
 }
